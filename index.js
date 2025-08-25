@@ -5,7 +5,7 @@ const cheerio = require("cheerio");
 const app = express();
 const PORT = 3000;
 
-app.get("/api/mega645", async (req, res) => {
+app.get("/", async (req, res) => {
   try {
     const url =
       "https://www.minhchinh.com/truc-tiep-xo-so-tu-chon-mega-645.html";
