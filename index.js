@@ -11,8 +11,7 @@ app.use(cors());
 app.get("/", async (req, res) => {
   try {
     console.log("1");
-    const url =
-      "https://www.minhchinh.com/truc-tiep-xo-so-tu-chon-mega-645.html";
+    const url = "https://www.ketquadientoan.com/tat-ca-ky-xo-so-mega-6-45.html";
     console.log("1.1");
     const response = await axios.get(url);
     const $ = cheerio.load(response.data);
