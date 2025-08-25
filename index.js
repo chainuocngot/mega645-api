@@ -24,7 +24,7 @@ app.get("/", async (req, res) => {
         const date = $(element).find("td").eq(0).text().trim();
 
         const numbers = $(element)
-          .find(".balls .mini-ball")
+          .find(".balls .ball")
           .map((i, el) => $(el).text().trim())
           .get();
 
