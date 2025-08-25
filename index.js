@@ -17,11 +17,19 @@ app.get("/", async (req, res) => {
     const response = await axios.get(url, {
       headers: {
         "User-Agent":
-          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115 Safari/537.36",
-        Accept:
-          "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Accept-Language": "en-US,en;q=0.9",
-        Referer: "https://www.google.com/",
+          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:128.0) Gecko/20100101 Firefox/128.0",
+        Accept: "*/*",
+        "Accept-Language": "en-US,en;q=0.5",
+        "Content-Type": "text/plain; charset=utf-8",
+        "X-AjaxPro-Method": "ServerSideDrawResult",
+        "X-Requested-With": "XMLHttpRequest",
+        Origin: "https://vietlott.vn",
+        Connection: "keep-alive",
+        Referer:
+          "https://vietlott.vn/vi/trung-thuong/ket-qua-trung-thuong/winning-number-645",
+        "Sec-Fetch-Dest": "empty",
+        "Sec-Fetch-Mode": "cors",
+        "Sec-Fetch-Site": "same-origin",
       },
     });
     const $ = cheerio.load(response.data);
